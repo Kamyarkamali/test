@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../../public/output.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script type="module" src="../javascripts/include.js"></script>
+    <title>صفحه ساخت اکانت</title>
+  </head>
+  <body class="font-fontorg">
+    <!-- هدر در تمام صفحات ثابت هست -->
+    <section id="Header"></section>
+
+    <div
+      class="flex flex-col justify-center items-center min-h-screen bg-gray-100 p-4"
+    >
+      <div
+        class="w-full max-w-4xl bg-white shadow-lg rounded-lg flex flex-col md:flex-row"
+      >
+        <!-- تصویر -->
+        <div class="w-full md:w-1/2 relative">
+          <img
+            src="../images/Marasema Assets/image-8.webp"
+            alt="Login Image"
+            class="w-full h-full object-cover rounded-t-lg md:rounded-r-lg md:rounded-t-none"
+          />
+          <div
+            class="absolute inset-0 flex justify-center items-center text-white text-3xl font-semibold"
+            style="backdrop-filter: brightness(60%)"
+          >
+            <div class="text-center"></div>
+          </div>
+        </div>
+
+        <!-- فرم ورود -->
+        <div class="w-full md:w-1/2 p-8">
+          <h2
+            class="text-2xl font-bold text-gray-800 mb-2 text-center md:text-right"
+          >
+            ایجاد حساب کاربری
+          </h2>
+          <p class="text-gray-500 mb-6 font-english text-center md:text-right">
+            sign up
+          </p>
+          <p class="text-gray-600 text-sm mb-4 text-center md:text-right">
+            برای ایجاد حساب کاربری لطفا اطلاعات زیر را کامل کنید :
+          </p>
+          <form action="#" method="POST">
+            <div class="mb-4">
+                <input
+                  type="text"
+                  placeholder="نام و نام خانوادگی *"
+                  class="w-full placeholder:text-[14px] px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
+                  required
+                />
+            <div class="mb-4 mt-4">
+              <input
+                type="email"
+                placeholder="آدرس ایمیل *"
+                class="w-full placeholder:text-[14px] px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
+                required
+              />
+              
+            </div>
+            <div class="mb-4 mt-4">
+                <input
+                  type="text"
+                  placeholder="شماره موبایل ( اختیاری)"
+                  class="w-full placeholder:text-[14px] px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
+                  required
+                />
+                
+              </div>
+            <div class="mb-4">
+              <input
+                type="password"
+                placeholder="رمز عبور خود را انتخاب کنید*"
+                class="w-full placeholder:text-[14px] px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
+                required
+              />
+            </div>
+            <div class="mb-4">
+                <input
+                  type="password"
+                  placeholder="رمز عبور خود را تکرار کنید*"
+                  class="w-full placeholder:text-[14px] px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
+                  required
+                />
+              </div>
+            <div class="mb-4">
+              <div class="flex flex-col md:flex-row items-center gap-2">
+                <input
+                  type="text"
+                  placeholder="لطفا کد عددی را وارد کنید *"
+                  class="w-full placeholder:text-[14px] px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
+                  required
+                />
+                <span class="text-white bg-black px-4 py-2 rounded-lg"
+                  >۵۷۷۹۰</span
+                >
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-900"
+            >
+              ایجاد حساب کاربری
+            </button>
+            <p class="text-red-500 text-xs mt-2 text-center">
+              * رمز عبور شما نادرست است، لطفاً مجدد تلاش کنید!
+            </p>
+            <div class="flex justify-center">
+              <p class="text-gray-700 text-sm mt-4">
+                اکانت دارید؟
+                <a href="../pages/SignIn.html" class="text-blue-500"
+                  >وارد شوید</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <section id="Footer"></section>
+  </body>
+</html>

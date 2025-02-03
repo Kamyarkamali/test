@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="w-full mx-auto">
+      <!-- عکس بالای هدر -->
+      <section class="topheader">
+        <img
+          class="w-full object-cover"
+          src="/src/assets/images/mainImage/topheader.png"
+          alt="معرفی بهترین ها در کنار شما, برای شما با تخفیف های خاص و جذاب"
+        />
+      </section>
+
+      <!-- نوبار -->
+      <section>
+        <nav
+          class="w-full h-[96px] bg-[#010101] text-white flex flex-wrap items-center lg:px-4"
+        >
+          <div
+            class="bg-transparent flex justify-between w-full items-center gap-4 mr-[3.5rem]"
+          >
+            <!-- همبرگر منو -->
+            <div class="md:hidden">
+              <button id="hamburger-menu" class="text-white focus:outline-none">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="flex items-center bg-transparent gap-4">
+              <img
+                class="bg-transparent hidden lg:block w-[17px] h-[17px]"
+                src="/src/assets/iconsFile/home.png"
+                alt="/"
+              />
+
+              <div
+                class="bg-transparent lg:flex items-center gap-2 relative hidden"
+              >
+                <div class="flex items-center gap-2 cursor-pointer pointer">
+                  <p class="bg-transparent text-[16px]">دسته بندی ها</p>
+                  <img
+                    class="bg-transparent w-[8px] h-[6px]"
+                    src="/src/assets/iconsFile/arrowdown.png"
+                    alt="/"
+                  />
+                </div>
+
+                <!-- مگامنو -->
+                <section
+                  class="absolute hidden opacity-0 z-20 transition-all duration-300 megammenu w-[748px] h-fit shadow-lg shadow-gray-300 rounded-md right-0 transform top-[40px] text-white bg-white"
+                >
+                  <div
+                    class="bg-transparent w-full border-b-2 pb-5 border-[#909090]"
+                  >
+                    <ul class="megamenuUl"></ul>
+                  </div>
+                  <!-- لیست مگامنو -->
+                  <ul class="listmegamenu"></ul>
+
+                  <div></div>
+                </section>
+
+                <div class="buffer-zone absolute top-full h-4 w-full"></div>
+                <!-- مگامنو -->
+              </div>
+            </div>
+
+            <section
+              class="absolute left-1/2 transform -translate-x-1/2 text-white bg-transparent"
+            >
+              <a href="/src/assets/pages/index.html">
+                <img
+                  class="bg-transparent"
+                  src="/src/assets/iconsFile/textlogo.png"
+                  alt="namelogo"
+                />
+              </a>
+            </section>
+
+            <!-- منوی کشویی -->
+            <div
+              id="mobile-menu"
+              class="fixed w inset-0 bg-black bg-opacity-75 backdrop-blur-sm z-50 hidden"
+            >
+              <div class="flex justify-end p-4">
+                <button id="close-menu" class="text-white focus:outline-none">
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="p-4 flex justify-center items-center h-[300px] font-bold"
+              >
+                <ul
+                  class="text-white flex flex-col justify-center items-center"
+                >
+                  <li
+                    class="mb-4 border-b-[1px] hover:border-[1px] hover:bg-white hover:text-black transition-all duration-300 hover:rounded-md p-2"
+                  >
+                    <a href="../pages/index.html">صفحه اصلی</a>
+                  </li>
+                  <li
+                    class="mb-4 border-b-[1px] hover:border-[1px] hover:bg-white hover:text-black transition-all duration-300 hover:rounded-md p-2"
+                  >
+                    <a href="../pages/Archive1.htm">آرشیو1</a>
+                  </li>
+                  <li
+                    class="mb-4 border-b-[1px] hover:border-[1px] hover:bg-white hover:text-black transition-all duration-300 hover:rounded-md p-2"
+                  >
+                    <a href="../pages/Archive2.html">آرشیو2</a>
+                  </li>
+                  <li
+                    class="mb-4 border-b-[1px] hover:border-[1px] hover:bg-white hover:text-black transition-all duration-300 hover:rounded-md p-2"
+                  >
+                    <a href="../pages/About.html">درباره ما</a>
+                  </li>
+                  <li
+                    class="mb-4 border-b-[1px] hover:border-[1px] hover:bg-white hover:text-black transition-all duration-300 hover:rounded-md p-2"
+                  >
+                    <a href="../pages/PanelUser.html">پنل</a>
+                  </li>
+                  <li
+                    class="mb-4 border-b-[1px] hover:border-[1px] hover:bg-white hover:text-black transition-all duration-300 hover:rounded-md p-2"
+                  >
+                    <a href="../pages/SingelPage.html">سینگل پیج</a>
+                  </li>
+                  <li
+                    class="mb-4 border-b-[1px] hover:border-[1px] hover:bg-white hover:text-black transition-all duration-300 hover:rounded-md p-2"
+                  >
+                    <a href="../pages/SignIn.html">ورود / عضویت</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <section class="text-white bg-transparent pl-9 flex items-center">
+              <div class="bg-transparent flex items-center gap-8">
+                <div class="lg:flex items-center hidden">
+                  <input
+                    type="text"
+                    placeholder="جستجو کنید..."
+                    class="bg-transparent placeholder:text-[16px] border-none outline-none p-1"
+                  />
+                  <img
+                    class="bg-transparent w-[17px] h-[17px] cursor-pointer"
+                    src="/src/assets/iconsFile/search.png"
+                    alt="searchlogo"
+                  />
+                </div>
+
+                <p
+                  class="hidden md:flex bg-transparent text-white text-[18px] hover:cursor-pointer hover:text-gray-400 transition duration-300 ease-in-out"
+                >
+                  ورود / عضویت
+                </p>
+              </div>
+            </section>
+          </div>
+        </nav>
+      </section>
+      <!-- نوبار -->
+
+      <!-- هیرو اسلایدر -->
+      <div class="swiper-container relative overflow-hidden w-full h-full">
+        <div
+          class="swiper-wrapper flex transition-transform duration-1000 ease-in-out"
+        >
+          <div class="swiper-slide w-full flex justify-center items-center">
+            <img
+              src="../images/heroslider/1.webp"
+              alt="Image 1"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="swiper-slide w-full flex justify-center items-center">
+            <img
+              src="../images/heroslider/2.webp"
+              alt="Image 2"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="swiper-slide w-full flex justify-center items-center">
+            <img
+              src="../images/heroslider/3.webp"
+              alt="Image 3"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="swiper-slide w-full flex justify-center items-center">
+            <img
+              src="../images/heroslider/4.webp"
+              alt="Image 3"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="swiper-slide w-full flex justify-center items-center">
+            <img
+              src="../images/heroslider/5.webp"
+              alt="Image 3"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- هیرو اسلایدر -->
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

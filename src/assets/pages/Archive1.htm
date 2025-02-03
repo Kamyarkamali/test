@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../../public/output.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- فایل مربوط به نمایش هدر و فوتر -->
+    <script type="module" src="../javascripts/include.js"></script>
+    <title>باغ تالار قصر بوران</title>
+  </head>
+  <body class="font-fontorg">
+    <!-- هدر در تمام صفحات ثابت هستش -->
+    <section id="Header"></section>
+
+    <main>
+      <!-- سرچ و دسته بندی -->
+      <section class="w-full h-auto mt-[7rem]">
+        <div
+          class="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start"
+        >
+          <!-- Logo Section -->
+          <div class="flex justify-center lg:justify-start mb-8 lg:mb-0">
+            <img src="../images/archive1/image (32).png" alt="لوگو" />
+          </div>
+
+          <!-- Content Section -->
+          <div class="flex flex-col items-center mt-8 lg:mt-0">
+            <p class="text-center">شامل 11 دسته بندی</p>
+            <div class="flex items-center gap-2.5 mt-[3rem]">
+              <a href="../pages/index.html">
+                <img src="../iconsFile/Vector 3 (5).png" alt="home" />
+              </a>
+              <img src="../iconsFile/arrolwleft.png" alt="arrowleft" />
+              <p class="text-3xl font-bold text-center">دسته بندی های عقد</p>
+            </div>
+            <div>
+              <p class="text-2xl text-center font-english text-[#909090]">
+                engage categories
+              </p>
+
+              <!-- Filters Section -->
+              <div
+                class="mt-9 flex flex-col items-center lg:flex-row gap-4 lg:gap-8"
+              >
+                <div
+                  class="flex flex-col items-center border-l-[1px] border-[#909090] pl-4 mb-4 lg:mb-0 lg:pr-4 w-full lg:w-auto"
+                >
+                  <label class="font-bold">محدوده</label>
+                  <select
+                    class="outline-none text-center w-[130px] lg:w-[200px] text-[#909090]"
+                  >
+                    <option value="">شرق تهران</option>
+                    <option value="">غرب تهران</option>
+                    <option value="">شمال تهران</option>
+                    <option value="">جنوب تهران</option>
+                    <option value="">کرج</option>
+                  </select>
+                </div>
+                <div
+                  class="flex flex-col items-center pl-4 pr-4 mb-4 lg:mb-0 w-full lg:w-auto"
+                >
+                  <label class="font-bold">دارای کوپن تخفیف</label>
+                  <select
+                    class="outline-none text-center w-[130px] lg:w-[200px] text-[#909090]"
+                  >
+                    <option value="">باشد</option>
+                    <option value="">نباشد</option>
+                  </select>
+                </div>
+                <div
+                  class="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto"
+                >
+                  <input
+                    class="p-1 outline-none w-[130px] lg:w-[200px] text-[#909090] placeholder:text-[12px] placeholder:text-black"
+                    type="text"
+                    placeholder="جستوجو در دسته بندی..."
+                  />
+                  <img
+                    class="cursor-pointer hidden lg:block"
+                    src="../iconsFile/search.png"
+                    alt="search"
+                  />
+                </div>
+              </div>
+
+              <!-- Description Section -->
+              <div class="mt-9">
+                <p
+                  class="w-full lg:w-[720px] font-bold text-center text-[13px] text-[#909090] leading-[25px]"
+                >
+                  تالار عروسی به مکان هایی گفته می شود که با ارائه خدماتی همچون
+                  طراحی و دیزاین سالن، میز پذیرایی، جایگاه عروس و داماد، سرور
+                  غذا و همچنین ارائه خدمات توسط پرسنل مجرب به شما کمک می کند تا
+                  نگرانی از بابت پذیرایی و… نداشته باشید و با خیال راحت در کنار
+                  عزیزانتان به جشن و پایکوبی بپردازید. با توجه به فضای زندگی
+                  شهری خصوصا آپارتمان نشینی، برگزاری جشن های مختلف خصوصا بله
+                  برون، عقد و عروسی در خانه های کوچک کار بسیار سختی می باشد.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Section -->
+          <div class="relative inline-block mt-8 lg:mt-0">
+            <img
+              class="z-[100] w-[180px] mx-auto lg:mx-0"
+              src="../images/archive1/image (34).png"
+              alt="images"
+            />
+            <img
+              class="absolute left-[8rem] w-[400px] top-[-3rem] ml-9 z-[-1] hidden lg:block"
+              src="../images/archive1/image (33).png"
+              alt="images"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- قسمت اول -->
+      <section class="w-full hidden lg:block bg-[#E1E1D7] h-[500px] mt-[4rem]">
+        <div class="mx-auto flex justify-between">
+          <div>
+            <div class="p-8 mr-[3rem]">
+              <div class="flex flex-col">
+                <p class="text-3xl font-bold">سالن عقد</p>
+                <p class="font-english text-[#909090]">engage salanes</p>
+              </div>
+            </div>
+
+            <div class="mt-[7rem] relative">
+              <!-- تصویر وسط -->
+              <img
+                class="w-[200px] h-[150px] bottom-[-12rem] right-0 absolute z-20"
+                src="../images/archive1/image (36).png"
+                alt="images"
+              />
+
+              <!-- تصویر سمت راست -->
+              <img
+                class="w-[200px] h-[150px] absolute right-[19rem] bottom-[-12rem] z-10"
+                src="../images/archive1/image (39).png"
+                alt="images"
+              />
+
+              <!-- تصویر سمت وسط -->
+              <img
+                class="w-[200px] h-[250px] absolute right-[8rem] bottom-[-11rem] z-0"
+                src="../images/archive1/image (35).png"
+                alt="images"
+              />
+            </div>
+          </div>
+
+          <div class="flex items-center h-[500px]">
+            <img
+              class="w-[250px]"
+              src="../images/archive1/image (38).png"
+              alt="images"
+            />
+          </div>
+
+          <div class="mt-[7rem] relative">
+            <!-- تصویر وسط -->
+            <img
+              class="w-[200px] absolute left-[13rem] h-[150px] z-20"
+              src="../images/archive1/image (39).png"
+              alt="images"
+            />
+            <!-- تصویر سمت راست -->
+            <img
+              class="w-[200px] h-[150px] z-[20000]"
+              src="../images/archive1/image (39).png"
+              alt="images"
+            />
+
+            <!-- تصویر سمت وسط -->
+            <img
+              class="w-[200px] absolute left-[5rem] bottom-4 h-[250px] z-0"
+              src="../images/archive1/image (40).png"
+              alt="images"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- قسمت اول -->
+
+      <!-- قسمت اول اسلایدر برای  سایز موبایل -->
+
+      <section
+        class="product-slider-container mt-[3rem] lg:mt-0 flex lg:hidden items-center justify-center py-5 h-[600px] bg-[#E1E1D7] relative"
+      >
+        <div
+          class="flex absolute top-0 right-0 z-30 pr-[3rem] pt-[2rem] pl-[3rem] items-center justify-between w-full"
+        >
+          <div>
+            <p class="text-xl font-bold">سالن عقد</p>
+            <p class="font-english text-[#909090]">engage salanes</p>
+          </div>
+          <button
+            class="bg-[#BFC3AB] flex items-center gap-2 text-[14px] p-2 font-bold"
+          >
+            مشاهده این دسته
+            <img src="../iconsFile/arrolwleft.png" alt="مشاهده دسته عروسی" />
+          </button>
+        </div>
+
+        <div
+          class="bg-[#D4D4CA] w-[450px] lg:block hidden absolute top-0 left-0 h-full right-0"
+        ></div>
+        <div class="swiper product-slider max-w-[1300px] mx-auto">
+          <div class="swiper-wrapper">
+            <!-- هر محصول -->
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image-6 (2).webp"
+                alt="Product 1"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 lg:right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image-6 (2).webp"
+                alt="Product 1"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 lg:right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image-6 (2).webp"
+                alt="Product 1"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 lg:right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  تالار رویال بام بهستان
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  کرج,مهرویلا
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image-6 (2).webp"
+                alt="Product 1"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 lg:right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image-6 (2).webp"
+                alt="Product 1"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 lg:right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image-6 (2).webp"
+                alt="Product 1"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 lg:right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- سفره عقد -->
+      <section
+        class="product-slider-container flex items-center justify-center py-5 h-[600px] mt-8 relative"
+      >
+        <div
+          class="flex absolute top-0 right-0 z-30 pr-[3rem] pt-[2rem] pl-[3rem] items-center justify-between w-full"
+        >
+          <div>
+            <p class="text-xl font-bold">سفره عقد</p>
+            <p class="font-english text-[#909090]">engage salons</p>
+          </div>
+          <button
+            class="bg-[#BFC3AB] flex items-center gap-2 text-[14px] p-2 font-bold"
+          >
+            مشاهده این دسته
+            <img src="../iconsFile/arrolwleft.png" alt="مشاهده دسته عروسی" />
+          </button>
+        </div>
+
+        <div class="swiper product-slider max-w-[1310px] mx-auto">
+          <div class="swiper-wrapper">
+            <!-- هر محصول -->
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/heroslider/image (2).png"
+                alt="Product 1"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/heroslider/image (2).png"
+                alt="Product 2"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image (4).webp"
+                alt="Product 3"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  تالار رویال بام بهستان
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  کرج,مهرویلا
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img src="../images/Marasema Assets/image (4).webp" alt="Product
+              3" class="product-image rounded-xl w-full sm:h-[300px]
+              lg:h-[400px] object-cover"" />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image (4).webp"
+                alt="Product 3"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image (4).webp"
+                alt="Product 3"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- سفره عقد -->
+
+      <!-- سفره عقد2 -->
+
+      <section
+        class="product-slider-container flex items-center justify-center py-5 h-[600px] mt-8 relative"
+      >
+        <div
+          class="flex absolute top-0 right-0 z-30 pr-[3rem] pt-[2rem] pl-[3rem] items-center justify-between w-full"
+        >
+          <div>
+            <p class="text-xl font-bold">سفره عقد</p>
+            <p class="font-english text-[#909090]">engage salons</p>
+          </div>
+          <button
+            class="bg-[#BFC3AB] flex items-center gap-2 text-[14px] p-2 font-bold"
+          >
+            مشاهده این دسته
+            <img src="../iconsFile/arrolwleft.png" alt="مشاهده دسته عروسی" />
+          </button>
+        </div>
+
+        <div class="swiper product-slider max-w-[1310px] mx-auto">
+          <div class="swiper-wrapper">
+            <!-- هر محصول -->
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/heroslider/image (2).png"
+                alt="Product 1"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/heroslider/image (2).png"
+                alt="Product 2"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image (4).webp"
+                alt="Product 3"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  تالار رویال بام بهستان
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  کرج,مهرویلا
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img src="../images/Marasema Assets/image (4).webp" alt="Product
+              3" class="product-image rounded-xl w-full sm:h-[300px]
+              lg:h-[400px] object-cover"" />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image (4).webp"
+                alt="Product 3"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image (4).webp"
+                alt="Product 3"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- دسته بندی های عکس -->
+      <div class="min-h-screen flex items-center justify-center">
+        <div
+          class="max-w-[800px] w-full mx-auto place-items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4"
+        >
+          <div class="flex flex-col gap-3 items-center">
+            <img
+              class="w-full max-w-[300px] h-[400px] object-cover hover:scale-105 transition-all duration-300 cursor-pointer"
+              src="../images/Marasema Assets/3.webp"
+              alt="گالری"
+            />
+            <img
+              class="w-full max-w-[300px] h-[200px] object-cover hover:scale-105 transition-all duration-300 cursor-pointer"
+              src="../images/Marasema Assets/6.webp"
+              alt="گالری"
+            />
+          </div>
+          <div class="flex flex-col gap-3 items-center">
+            <img
+              class="w-full max-w-[300px] h-[200px] object-cover hover:scale-105 transition-all duration-300 cursor-pointer"
+              src="../images/Marasema Assets/4.webp"
+              alt="گالری"
+            />
+            <img
+              class="w-full max-w-[300px] h-[400px] object-cover hover:scale-105 transition-all duration-300 cursor-pointer"
+              src="../images/Marasema Assets/1.webp"
+              alt="گالری"
+            />
+          </div>
+          <div class="flex flex-col gap-3 items-center">
+            <img
+              class="w-full max-w-[300px] h-[400px] object-cover hover:scale-105 transition-all duration-300 cursor-pointer"
+              src="../images/Marasema Assets/2.webp"
+              alt="گالری"
+            />
+            <img
+              class="w-full max-w-[300px] h-[200px] object-cover hover:scale-105 transition-all duration-300 cursor-pointer"
+              src="../images/Marasema Assets/5.webp"
+              alt="گالری"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- سفره عقد 3 -->
+      <section
+        class="product-slider-container flex items-center justify-center py-5 h-[600px] mt-8 relative"
+      >
+        <div
+          class="flex absolute top-0 right-0 z-30 pr-[3rem] pt-[2rem] pl-[3rem] items-center justify-between w-full"
+        >
+          <div>
+            <p class="text-xl font-bold">سفره عقد</p>
+            <p class="font-english text-[#909090]">engage salons</p>
+          </div>
+          <button
+            class="bg-[#BFC3AB] flex items-center gap-2 text-[14px] p-2 font-bold"
+          >
+            مشاهده این دسته
+            <img src="../iconsFile/arrolwleft.png" alt="مشاهده دسته عروسی" />
+          </button>
+        </div>
+
+        <div class="swiper product-slider max-w-[1310px] mx-auto">
+          <div class="swiper-wrapper">
+            <!-- هر محصول -->
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/heroslider/image (2).png"
+                alt="Product 1"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/heroslider/image (2).png"
+                alt="Product 2"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image (4).webp"
+                alt="Product 3"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  تالار رویال بام بهستان
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  کرج,مهرویلا
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img src="../images/Marasema Assets/image (4).webp" alt="Product
+              3" class="product-image rounded-xl w-full sm:h-[300px]
+              lg:h-[400px] object-cover"" />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image (4).webp"
+                alt="Product 3"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide lg:mr-4 product-item relative transform transition-all duration-300 hover:scale-110 hover:opacity-100"
+            >
+              <img
+                src="../images/Marasema Assets/image (4).webp"
+                alt="Product 3"
+                class="product-image rounded-xl w-full sm:h-[300px] lg:h-[400px] object-cover"
+              />
+              <div class="absolute bottom-5 right-[-30px] flex flex-col">
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  باع تالار قصر بوران
+                </p>
+                <p
+                  class="product-name text-white w-[200px] text-center mt-2 font-bold text-gray-800"
+                >
+                  شرق تهران حکیمیه
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="Footer"></section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="../javascripts/archive.js"></script>
+  </body>
+</html>
